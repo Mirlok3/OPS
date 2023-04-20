@@ -7,16 +7,34 @@
 	<link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<header>
-		<h2>Neco</h2>
+<header>
+	<h2>Neco</h2>
 
-		<div>
-			<a href="/" class="active" disabled>Home</a>
-			<a href="/adresa" >Adresa</a>
-			<a href="https://spsehavirov.cz/">SPŠE Havířov</a>
-			<a href="/about">O nás</a>
+	<div>
+		<a href="/" class="active" disabled>Home</a>
+		<a href="/adresa" >Adresa</a>
+		<a href="https://spsehavirov.cz/">SPŠE Havířov</a>
+		<a href="/about">O nás</a>
+	</div>
+</header>
+<div class="container">
+	<% for (obj of json) { %>
+		<div class="karta">
+			<div class="neco">
+				<div class="nadpis">
+					<div class="nazev">
+						<h2><%= obj['název'].cs %></h2>
+						<p>Vyvěšení: <%= obj['vyvěšení'].typ %>
+							<span><%= obj['vyvěšení'].datum %> do <%= obj['relevantní_do'].datum %></span>
+						</p>
+						<p>Odbor: <%= obj['odbor'] %></p>
+					</div>
+					<p class="typ"><%= obj['typ'][0] %>, <%= obj['typ'][1] %></p>
+				</div>
+				<a href="<%= obj['url'] %>" class="url">Přečti více...</a>
+			</div>
 		</div>
-	</header>
+	<% } %>
+</div>
 </body>
 </html>
-

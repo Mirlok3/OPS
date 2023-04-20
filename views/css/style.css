@@ -103,4 +103,54 @@ li {
   height: 500px;
 }
 
+.karta {
+  margin: 0 auto;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+  text-align: left;
+}
+
+.neco, .neco * {
+  background-color: #121212;
+  border-radius: 25px;
+}
+
+.neco {
+  padding: 30px 40px;
+  border: 2px solid gray;
+}
+
+.typ {
+  color: white;
+  background-color: green;
+  width: 20%;
+  height: 10%;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.nadpis {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.nazev p {
+  color: #D0D3D4 ;
+}
+
+.url {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.url:hover {
+  background-color: #BBBEBF;
+}
 
