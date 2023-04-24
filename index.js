@@ -8,9 +8,9 @@ app.set('view engine', 'ejs');
 //app.use(express.static('public'))
 
 app.get('/', async (req, res) => {
-	const set = await axios.get('http://www.karvina.cz/opendata.json');
+    const set = await axios.get('http://www.karvina.cz/opendata.json');
 
-	res.render('index', {json: set.data.informace});
+    res.render('index', {json: set.data.informace});
 });
 
 app.get('/adresa', function(req, res) {

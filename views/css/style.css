@@ -1,156 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
   margin: 0;
-  background-color: #242424;
+  padding: 0;
+  font: inherit;
 }
 
-header {
-  padding: 10px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  font-size: 40px;
-  background-color: black;
-  padding-inline: 50px;
+html {
+  background-color: #181A1C;
 }
 
-header div {
-  background-color: black;
-  padding-top: 10px;
-}
-
-header div a {
-  background-color: black;
-  padding: 10px;
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-
-}
-
-header h2 {
-  background-color: black;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-}
-
-header div a:hover {
-  color: lightblue;
-}
-
-
-.container {
-  margin-top: 25px;
-  text-align: center;
-  padding: 10px;
-}
-
-#ahoj{
-  color: white;
-  font-weight: bold;
-}
-
-.about{
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-.ul1{
-  text-align: right;
-  border-right: 0.5px solid black;
-}
-
-.ul2{
-  text-align: left;
-   border-left: 0.5px solid black;
-}
-
-
-li {
-  list-style-type: none;
-  text-decoration: none;
-  padding: 15px;
-  padding-bottom: 50px;
-}
-
-.active {
-  color: lightblue;
-}
-
-.listImg {
-  padding-top: 10px;
-  width: 50px;
-  height: 50px;
-}
-
-.ulAbout{
-  font-size: 20px;
-  padding-right: 50px;
-}
-
-.imageSection {
-  padding-top: 30px;
-}
-
-.aboutImg{
-  aspect-ratio: 1 / 1;
-  width: 500px;
-  height: 500px;
-}
-
-.karta {
+body {
   margin: 0 auto;
   width: 75vw;
-  display: flex;
-  flex-direction: column;
+  background-color: #1B1B1B;
   color: white;
-  padding: 30px;
-  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  border: 3px solid #242424;
+  padding: 1em;
 }
 
-.neco, .neco * {
-  background-color: #121212;
-  border-radius: 25px;
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
 }
 
-.neco {
-  padding: 30px 40px;
-  border: 2px solid gray;
+.header {
+  min-height: 10vh;
+  border-bottom: 4px solid #252525;
+  color: #898989;
+  margin: 0 auto;
 }
 
-.typ {
-  color: white;
+.title {
+  margin: 0 auto;
+  font-weight: 700;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.container::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background: #242424;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #898989;
+  border-radius: 20px;
+}
+
+.container {
+  overflow-y:scroll;
+  padding-top: 1em;
+  padding-inline: 1.5em;
+  height: 78vh;
+}
+
+.card {
+  border-bottom: 3px solid #252525;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.card-odbor {
+  padding: .25em .75em;
   background-color: green;
-  width: 20%;
-  height: 10%;
+  font-size: .8rem;
   border-radius: 15px;
-  padding: 10px 15px;
 }
 
-.nadpis {
+.card-title {
+  padding-top: .6em;
+  padding-bottom: .5em;
+}
+
+.card-title h2 {
+  font-size: 1.75rem;
+}
+
+.card-title span {
+  color: #898989;
+  font-size: .8rem;
+}
+
+.card-bottom {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
 }
 
-.nazev p {
-  color: #D0D3D4 ;
+.card-bottom p {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.url {
-  color: black;
+.card-bottom a {
+  padding: .25em .75em;
+  background-color: dodgerblue;
   text-decoration: none;
-  background-color: white;
+  color: white;
+  font-size: 1.2rem;
   border-radius: 15px;
-  padding: 10px 15px;
+}
+.card-bottom a:hover {
+  background-color: #1E6AD3;
 }
 
-.url:hover {
-  background-color: #BBBEBF;
+.footer {
+  min-height: 2vh;
+  border-top: 4px solid #252525;
+  padding-top: 1.5em;
+  margin-inline: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  color: #898989;
+  text-decoration: none;
 }
 
+.footer a {
+  color: #898989;
+  margin: 0 auto;
+  padding-inline: 3em;
+  text-decoration: none;
+  padding-bottom: .25em;
+}
+
+.footer a:hover, footer .active {
+  color: #C3C3C3;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.image {
+  max-width: 30vw;
+  aspect-ratio: 1/1;
+}
+
+.icon {
+  max-width: 50px;
+  aspect-ratio: 1/1;
+  margin: 1em;
+}
+
+.about-skills {
+  display: flex;
+}
+
+.about-list {
+  list-style: none;
+}
+
+.about-list li {
+  font-size: 1.5rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.about-list li h2 {
+  font-size: 2rem;
+}
