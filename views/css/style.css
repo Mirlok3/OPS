@@ -21,24 +21,17 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   min-height: 100vh;
-  border: 3px solid #242424;
+  border-inline: 3px solid #242424;
   padding: 1em;
-}
-
-img, picture, svg, video {
-  display: block;
-  max-width: 100%;
 }
 
 .header {
   min-height: 10vh;
   border-bottom: 4px solid #252525;
   color: #898989;
-  margin: 0 auto;
 }
 
 .title {
-  margin: 0 auto;
   font-weight: 700;
   text-align: center;
   font-size: 3rem;
@@ -99,7 +92,6 @@ img, picture, svg, video {
 
 .card-bottom p {
   margin-top: auto;
-  margin-bottom: auto;
 }
 
 .card-bottom a {
@@ -118,19 +110,15 @@ img, picture, svg, video {
   min-height: 2vh;
   border-top: 4px solid #252525;
   padding-top: 1.5em;
-  margin-inline: 1.5em;
   display: flex;
-  flex-wrap: wrap;
   color: #898989;
-  text-decoration: none;
 }
 
 .footer a {
   color: #898989;
   margin: 0 auto;
-  padding-inline: 3em;
   text-decoration: none;
-  padding-bottom: .25em;
+  font-size: 1.2rem;
 }
 
 .footer a:hover, footer .active {
@@ -141,7 +129,6 @@ img, picture, svg, video {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  align-content: space-around;
   justify-content: space-around;
 }
 
@@ -172,4 +159,15 @@ img, picture, svg, video {
 
 .about-list li h2 {
   font-size: 2rem;
+}
+
+.about-image {
+  border-radius: 100%;
+  margin-top: 2em;
+}
+
+@media (max-width:720px) {
+  body {
+    width: 100vw;
+  }
 }
